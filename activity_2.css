@@ -1,0 +1,16 @@
+table, td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 0.25rem;
+}
+
+th {
+	background-color: #B0B0B0;
+}
+
+tr:nth-child(even) {
+	background-color: gainsboro;
+}
