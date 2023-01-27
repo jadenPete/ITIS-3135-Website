@@ -1,0 +1,15 @@
+main {
+	max-width: 50rem !important;
+}
+
+.background-paragraph {
+	background-color: #f0f0f0;
+	border-bottom-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.cover-text {
+	bottom: -1.5rem;
+	right: 0rem;
+	font-size: 10rem;
+}
