@@ -1,0 +1,14 @@
+button, select {
+	background-color: gray;
+	color: white;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	margin: 6px 0;
+}
+
+input[type="email"], input[type="text"] {
+	background-color: lightgray;
+	border-radius: 4px;
+	margin: 4px 0;
+}

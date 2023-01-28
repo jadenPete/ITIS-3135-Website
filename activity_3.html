@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="activity_3.css">
+
+		<title>Activity 3 | ITIS 3135</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Jaden Peterson's ITIS 3135 Activity 3 Submission </h1>
+		</header>
+
+		<main>
+			<h2>Educational Form</h2>
+
+			<form action="#">
+				<h4>General information</h4>
+
+				<input type="text" name="name" placeholder="Name" required>
+				<br>
+
+				<input type="text" name="phone-number" placeholder="Phone number" required>
+				<br>
+
+				<input type="email" name="email" placeholder="Email" required>
+				<br>
+
+				<h4>Which courses are you enrolled in?</h4>
+
+				<input type="checkbox" id="course-cs" name="course">
+				<label for="course-cs">Enrolled in a CS course</label>
+				<br>
+
+				<input type="checkbox" id="course-math" name="course">
+				<label for="course-math">Enrolled in a math course</label>
+				<br>
+
+				<input type="checkbox" id="course-engineering" name="course">
+				<label for="course-engineering">Enrolled in an engineering course</label>
+				<br>
+
+				<input type="checkbox" id="course-science" name="course">
+				<label for="course-science">Enrolled in a science course</label>
+				<br>
+
+				<h4>Where do you live?</h4>
+
+				<input type="radio" id="living-with-so" name="living">
+				<label for="living-with-so">Living with significant other</label>
+				<br>
+
+				<input type="radio" id="living-independently" name="living">
+				<label for="living-independently">Living independently</label>
+				<br>
+
+				<input type="radio" id="living-with-family" name="living">
+				<label for="living-with-family">Living with family</label>
+				<br>
+
+				<input type="radio" id="living-on-campus" name="living">
+				<label for="living-on-campus">Living on-campus</label>
+				<br>
+
+				<h4>When will you graduate?</h4>
+
+				<select name="graduation-year" required>
+					<option disabled selected>Select your graduation year</option>
+					<option>2023</option>
+					<option>2024</option>
+					<option>2025</option>
+					<option>2026</option>
+				</select>
+				<br>
+
+				<button type="button" onclick="window.location.reload();">Reset</button>
+
+				<button type="submit">Submit</button>
+			</form>
+		</main>
+
+		<footer></footer>
+	</body>
+</html>
