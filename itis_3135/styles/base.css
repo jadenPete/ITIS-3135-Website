@@ -23,7 +23,7 @@ main {
 }
 
 .nav-link a {
-	color: #EEF4D4;
+	color: lightgray;
 	font-weight: 500;
 	text-decoration: none;
 }
@@ -33,6 +33,11 @@ main {
 	list-style-type: none;
 	margin: 0;
 	margin-right: 2rem;
+}
+
+.nav-link-selected a {
+	color: #EEF4D4;
+	font-weight: bold;
 }
 
 .title {
