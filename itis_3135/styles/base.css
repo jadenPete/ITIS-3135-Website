@@ -1,0 +1,42 @@
+a {
+	color: #2E6171;
+}
+
+body {
+	font-family: sans;
+	margin: 0;
+}
+
+header {
+	align-items: center;
+	justify-content: space-between;
+	background-color: #2E6171;
+	display: flex;
+}
+
+main {
+	margin: 0.5rem;
+}
+
+.nav-link:not(:last-of-type) {
+	margin-right: 1rem;
+}
+
+.nav-link a {
+	color: #EEF4D4;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.nav-link-container {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	margin-right: 2rem;
+}
+
+.title {
+	color: lightgray;
+	margin: 0;
+	padding: 1rem 0 1rem 1rem;
+}
