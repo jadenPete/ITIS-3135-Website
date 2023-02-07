@@ -1,0 +1,14 @@
+fieldset {
+	border: none;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	padding: 0;
+}
+
+.adjective-fieldset {
+	margin-bottom: 1rem;
+}
+
+.perry-function-button {
+	margin-bottom: 0.5rem;
+}

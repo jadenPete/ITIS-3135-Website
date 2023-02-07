@@ -24,8 +24,14 @@ header {
 	display: flex;
 }
 
+hr {
+	background-color: #d0d0d0;
+	border: none;
+	height: 1px;
+}
+
 main {
-	margin: 0.5rem;
+	margin: 0 2rem;
 }
 
 .attribution-container {
