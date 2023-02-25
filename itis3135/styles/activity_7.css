@@ -1,0 +1,44 @@
+.calculator {
+	display: grid;
+	grid-auto-rows: 1fr;
+	grid-template-columns: repeat(5, 1fr);
+	width: 20rem;
+}
+
+.calculator-button {
+	border: none;
+	font-family: monospace;
+	padding: 0.5rem;
+}
+
+.calculator-button > .material-icons {
+	line-height: 100%;
+	vertical-align: middle;
+}
+
+.calculator-button, .calculator-input {
+	border-radius: 4px;
+	margin: 0.125rem;
+}
+
+.calculator-input {
+	border: 2px solid lightgray;
+	color: black;
+	font-family: monospace;
+	font-size: 1rem;
+	font-weight: bold;
+	grid-column-end: span 5;
+	text-align: right;
+}
+
+.backspace-button {
+	grid-column-end: span 2;
+}
+
+.enter-button {
+	grid-row-end: span 2;
+}
+
+.zero-button {
+	grid-column-end: span 2;
+}
