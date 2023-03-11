@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Description" content="Testing website for accessibility.">
+
+    <!-- css -->
+    <link rel="stylesheet" href="Peterson-Activity_Accessibility.css">
+
+    <title>Test For Accessibility</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>Candle Delight</h2>
+    </header>
+
+    <main>
+      <table class="center">
+        <caption>Candles</caption>
+
+        <thead>
+          <tr>
+            <!-- identify table headers <th> with scope attribute -->
+            <th >TYPE</th>
+            <th >PRODUCT</th>
+            <th >FEATURES</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th>Birthday Candles</th>
+            <td>
+              <img
+                class="candle-image"
+                src="images/Birthday-Candles.jpg"
+                alt="A white birthday cake with candles spelling &quot;Happy birthday&quot;">
+            </td>
+
+            <td>
+              <ol>
+                <li>Comes in a range of fun, vibrant colors</li>
+                <li>Small and slender forms allow you to add as many or as few of them to a dessert as you desire</li>
+                <li>Offers a way to personalize customers' desserts on birthdays and anniversaries</li>
+              </ol>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Votives</th>
+            <td>
+              <img
+                class="candle-image"
+                src="images/voltives.jpeg"
+                alt="Five multicolored voltive candles on a surface and their shadows">
+            </td>
+
+            <td>
+              <ol>
+                <li>Inexpensive and easy to use</li>
+                <li>Bigger than tea lights to provide longer burn times, making them better for longer events</li>
+              </ol>
+            </td>
+          </tr>
+
+          <tr>
+            <th>Taper Candles</th>
+            <td>
+              <img
+                class="candle-image"
+                src="images/taper-candles.jpg"
+                alt="Many multicolored taper candles hanging by white threads">
+            </td>
+
+            <td>
+              <ol>
+                <li>Commonly known as window candles</li>
+                <li>Long, slender constructions add dimension to table tops</li>
+              </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--Add the form here-->
+      <form action="#">
+        <fieldset>
+          <label for="name-input">Name</label>
+          <input type="text" id="name-input" required>
+        </fieldset>
+
+        <fieldset>
+          <label for="phone-input">Phone number</label>
+          <input type="text" id="phone-input" pattern="1?\d{10}" required>
+        </fieldset>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+
+      <h3>Enter your name and phone number to win a gift!</h3>
+
+      <div class="whitespace"></div>
+
+      <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+
+      <div class="whitespace"></div>
+
+      <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast">
+        Find out if your font color and background color passes WCAG standard!
+      </a>
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://validator.w3.org/?ref=frontendchecklist">Validate the HTML of this page</a>
+      </p>
+
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/">Validate the CSS of this page</a>
+      </p>
+    </footer>
+  </body>
+</html>
