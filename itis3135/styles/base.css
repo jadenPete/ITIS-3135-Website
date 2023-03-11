@@ -10,6 +10,13 @@ body {
 	min-height: 100vh;
 }
 
+fieldset {
+	border: none;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	padding: 0;
+}
+
 footer {
 	display: flex;
 	justify-content: center;
