@@ -61,15 +61,45 @@ main {
 	text-decoration: none;
 }
 
+.nav-link a:hover, .nav-link-selected a {
+	color: #EEF4D4;
+}
+
 .nav-link-container {
+	margin-right: 2rem !important;
+}
+
+.nav-link-container, .nav-link-dropdown-container {
 	display: flex;
 	list-style-type: none;
 	margin: 0;
-	margin-right: 2rem;
+	padding: 0;
+}
+
+.nav-link-dropdown {
+	padding: 1rem 0;
+	position: relative;
+}
+
+.nav-link-dropdown:hover .nav-link-dropdown-container {
+	display: flex;
+}
+
+.nav-link-dropdown-container {
+	background-color: #416f7e;
+	border: 2px solid rgba(211, 211, 211, 0.2);
+	border-radius: 5px;
+	display: none;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: 1rem;
+	padding: 1rem;
+	position: absolute;
+	right: -2rem;
+	width: 10rem;
 }
 
 .nav-link-selected a {
-	color: #EEF4D4;
 	font-weight: bold;
 }
 
