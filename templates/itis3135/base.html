@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/base.css">
+
+		<title>Jaden Peterson | ITIS 3135-091 | {{ title }}</title>
+
+		{% block head %}{% endblock %}
+	</head>
+
+	<body>
+		<header>
+			<h1 class="title">
+				<a href="./">ITIS 3135 Website</a>
+			</h1>
+
+			<ul class="nav-link-container">
+				{% macro render_link(name, url) %}
+					{% if name == title %}
+						<li class="nav-link nav-link-selected">
+							<a href="#">{{ name }}</a>
+						</li>
+					{% else %}
+						<li class="nav-link">
+							<a href="{{ url }}">{{ name }}</a>
+						</li>
+					{% endif %}
+				{% endmacro %}
+
+				<li class="nav-link-dropdown nav-link">
+					<a>Activities</a>
+
+					<ul class="nav-link-dropdown-container">
+						{{ render_link("Tables", "activity_2.html") }}
+						{{ render_link("Forms", "activity_3.html") }}
+						{{ render_link("Website Evaluations", "activity_4.html") }}
+						{{ render_link("Introductory JavaScript", "activity_5.html") }}
+						{{ render_link("Polygons", "activity_6.html") }}
+						{{ render_link("Calculator", "activity_7.html") }}
+						{{ render_link("Arrays", "activity_8.html") }}
+						{{ render_link("Slideshow", "activity_9.html") }}
+						{{ render_link("Project 1", "project_1.html") }}
+						{{ render_link("Course Contract", "contract.html") }}
+					</ul>
+				</li>
+
+				<li class="nav-link-dropdown nav-link">
+					<a>Miscellaneous</a>
+
+					<ul class="nav-link-dropdown-container">
+						{{ render_link("Accessibility", "/accessibility/Peterson-Activity_Accessibility.html") }}
+						{{ render_link("Crappy Webpage", "stuff/INDEX %3F.html") }}
+					</ul>
+				</li>
+			</ul>
+		</header>
+
+		<main>
+			{% if heading|default(True) %}
+				<h2>{{ title }}</h2>
+			{% endif %}
+
+			{% block content %}{% endblock %}
+		</main>
+
+		<footer>
+			<div class="attribution-container">
+				Designed by <a href="/mobilityautomatic.com/">Mobility Automatic</a>
+			</div>
+		</footer>
+	</body>
+</html>

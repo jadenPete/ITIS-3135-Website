@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "itis3135-website"
+version = "0.1.0"
+description = "My personal hosted website for ITIS 3135, Web Application Design and Development"
+authors = ["Jaden Peterson"]
+license = "MIT"
+packages = [{include = "itis3135_website"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jinja2 = "^3.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

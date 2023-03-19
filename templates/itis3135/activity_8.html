@@ -1,0 +1,51 @@
+{% extends "itis3135/base.html" %}
+
+{% set title = "Arrays" %}
+
+{% block head %}
+	<link rel="stylesheet" href="styles/activity_8.css">
+
+	<script defer src="scripts/activity_8.js"></script>
+{% endblock %}
+
+{% block content %}
+	<form class="salary-form">
+		<fieldset>
+			<label for="name-input">Name</label>
+			<input type="text" id="name-input" name="name" required>
+		</fieldset>
+
+		<fieldset>
+			<label for="salary-input">Salary</label>
+			<input type="number" id="salary-input" name="salary" required>
+		</fieldset>
+
+		<button type="submit">Add Salary</button>
+	</form>
+
+	<button type="button" class="show-salaries-button">Show Salaries</button>
+	<button type="button" class="show-statistics-button">Show Salary Statistics</button>
+
+	<h3>Salaries</h3>
+
+	<table id="salaries-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Salary</th>
+			</tr>
+		</thead>
+
+		<tbody></tbody>
+	</table>
+
+	<h3>Salary Statistics</h3>
+
+	<p class="salary-statistic">
+		Average salary: <span class="average-salary">undefined</span>
+	</p>
+
+	<p class="salary-statistic">
+		Highest salary: <span class="highest-salary">undefined</span>
+	</p>
+{% endblock %}

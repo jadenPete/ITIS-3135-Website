@@ -1,0 +1,45 @@
+{% extends "itis3135/base.html" %}
+
+{% set title = "Calculator" %}
+
+{% block head %}
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="styles/activity_7.css">
+
+	<script defer src="scripts/activity_7.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="calculator">
+		<input type="text" class="calculator-input" disabled>
+
+		<button type="button" class="literal-button calculator-button">(</button>
+		<button type="button" class="literal-button calculator-button">)</button>
+		<button type="button" class="clear-button calculator-button">Clear</button>
+		<button type="button" class="backspace-button calculator-button">
+			<span class="material-icons">backspace</span>
+		</button>
+
+		<button type="button" class="literal-button calculator-button">*</button>
+		<button type="button" class="literal-button calculator-button">7</button>
+		<button type="button" class="literal-button calculator-button">8</button>
+		<button type="button" class="literal-button calculator-button">9</button>
+		<button type="button" class="literal-button calculator-button">+</button>
+		<button type="button" class="literal-button calculator-button">%</button>
+		<button type="button" class="literal-button calculator-button">4</button>
+		<button type="button" class="literal-button calculator-button">5</button>
+		<button type="button" class="literal-button calculator-button">6</button>
+		<button type="button" class="literal-button calculator-button">-</button>
+		<button type="button" class="literal-button calculator-button">^</button>
+		<button type="button" class="literal-button calculator-button">1</button>
+		<button type="button" class="literal-button calculator-button">2</button>
+		<button type="button" class="literal-button calculator-button">3</button>
+		<button type="button" class="enter-button calculator-button">
+			<span class="material-icons">keyboard_return</span>
+		</button>
+
+		<button type="button" class="literal-button calculator-button">/</button>
+		<button type="button" class="zero-button literal-button calculator-button">0</button>
+		<button type="button" class="literal-button calculator-button">.</button>
+	</div>
+{% endblock %}

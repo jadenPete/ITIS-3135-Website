@@ -1,0 +1,46 @@
+{% extends "itis3135/base.html" %}
+
+{% set title = "Introductory JavaScript" %}
+
+{% block head %}
+	<link rel="stylesheet" href="styles/activity_5.css">
+
+	<script defer src="scripts/activity_5.js"></script>
+{% endblock %}
+
+{% block content %}
+	<h3 class="current-date"></h3>
+
+	<hr>
+
+	<form class="feel-form">
+		<h3>How are you feeling?</h3>
+
+		<fieldset>
+			<label for="name-input">Name</label>
+			<input type="text" id="name-input" placeholder="Enter your first and last name" required>
+		</fieldset>
+
+		<fieldset>
+			<label for="adverb-input">Adverb</label>
+			<input type="text" id="adverb-input" placeholder="Enter an adverb" required>
+		</fieldset>
+
+		<fieldset class="adjective-fieldset">
+			<label for="adjective-input">Adjective</label>
+			<input type="text" id="adjective-input" placeholder="Enter an adjective" required>
+		</fieldset>
+
+		<button>Submit</button>
+	</form>
+
+	<hr>
+
+	<h3>Make Perry the Platypus:</h3>
+
+	<button class="perry-function-button visit-doofenshmirtz">Visit Dr. Doofenshmirtz</button>
+	<button class="perry-function-button foil-doofenshmirtz-plan">Foil Doofenshmirtz' Plan</button>
+	<button class="perry-function-button return-to-phineas-and-ferb">Return to Phineas and Ferb</button>
+	<button class="perry-function-button put-on-hat">Put on His Hat</button>
+	<button class="perry-function-button make-clicking-noises">Make Clicking Noises</button>
+{% endblock %}

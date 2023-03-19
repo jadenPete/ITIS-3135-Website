@@ -1,0 +1,54 @@
+{% extends "itis3135/base.html" %}
+
+{% set title = "Website Evaluations" %}
+
+{% block content %}
+	<h3>CRAP Principles</h3>
+
+	<ul>
+		<li>Contrast</li>
+		<li>Repetition</li>
+		<li>Alignment</li>
+		<li>Proximity</li>
+	</ul>
+
+	<h3>Website Evaluations</h3>
+
+	<section>
+		<h4>
+			Positive Case Study: <a href="https://www.google.com/search?q=foo+bar">Google</a>
+		</h4>
+
+		<p>
+			The Google search engine allows users to enter a search query and browse among
+			a list of potentially billions of results.<br>
+
+			The interface is simple, providing—for each result—a link, brief description,
+			and list of relevant keywords.
+		</p>
+
+		<ul>
+			<li>Contrast: Healthy; links are distinguished from the background and relevant keywords highlighted</li>
+			<li>Repetition: Adequate; every search result is formatted the same; upper tabs use homogenous icons</li>
+			<li>Alignment: Strong; the bulk of the page's content is concentrated on the left and consistently indented</li>
+			<li>Proximity: Strong; the most relevant search results comprise the top of the page; helpful quesitions are embedded throughout</li>
+		</ul>
+	</section>
+
+	<section>
+		<h4>
+			Negative Case Study: <a href="https://www.art.yale.edu/">Yale School of Art</a>
+		</h4>
+
+		<p>
+			"The Yale School of Art is a graduate school that confers MFAs in Graphic Design, Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level art courses to Yale College students."
+		</p>
+
+		<ul>
+			<li>Contrast: Too high; different colors are used where differentiation is unnecessary; heavy contrast distracts the user</li>
+			<li>Repetition: The lack of uniformity on the site lowers the speed at which one navigate and destracts from its aesthetic pleasure</li>
+			<li>Alignment: Nonexistent; elements are placed randomly and follow no discernable hierarchy</li>
+			<li>Proximity: Inconsistent; unrelated elements are placed in close proximity; no clear division between sections exists</li>
+		</ul>
+	</section>
+{% endblock %}

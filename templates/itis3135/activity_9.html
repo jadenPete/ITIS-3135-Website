@@ -1,0 +1,32 @@
+{% extends "itis3135/base.html" %}
+
+{% set title = "Slideshow" %}
+
+{% block head %}
+	<link rel="stylesheet" href="styles/activity_9.css">
+
+	<script defer src="scripts/activity_9.js"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="slideshow">
+		<button type="button" class="slideshow-previous slideshow-button">
+			<span class="material-symbols-outlined">
+				arrow_back
+			</span>
+		</button>
+
+		<button type="button" class="slideshow-next slideshow-button">
+			<span class="material-symbols-outlined">
+				arrow_forward
+			</span>
+		</button>
+
+		<img class="current-slideshow-image slideshow-image" src="images/activity_9/photo_1.jpg">
+		<img class="slideshow-image" src="images/activity_9/photo_2.jpg">
+		<img class="slideshow-image" src="images/activity_9/photo_3.jpg">
+		<img class="slideshow-image" src="images/activity_9/photo_4.jpg">
+		<img class="slideshow-image" src="images/activity_9/photo_5.jpg">
+		<img class="slideshow-image" src="images/activity_9/photo_6.jpg">
+	</div>
+{% endblock %}
