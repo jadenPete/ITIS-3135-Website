@@ -1,0 +1,33 @@
+{% set title = "" %}
+
+{% extends "client_project/base.html" %}
+
+{% block head %}
+	<link rel="stylesheet" href="styles/index.css">
+{% endblock %}
+
+{% block header %}
+	<h1 class="header-title title">Singatopore</h1>
+	<p class="header-description">
+		Singatopore is the leading nonprofit organization dedicated towards supporting
+		Singapore's cats. Singatopore's primary function is to catalog the city's cats and
+		facilitate communication regarding their care and characteristics.
+	</p>
+
+	<p class="header-description">
+		The collective is led by cat advocate and well-regarded commutity volunteer
+		Amanda Lim. Amanda is a senior business analytics student at the
+		National University of Singapore and aspiring software engineer who's mission is to
+		improve the quality of life of the city's stray pets via a community-oriented
+		approach.
+	</p>
+
+	<a class="catalog-link" href="catalog.html">
+		Visit our Cat Catalog <span class="material-symbols-outlined">arrow_forward</span>
+	</a>
+
+	<span class="celebration-icon material-symbols-outlined">celebration</span>
+	<span class="celebration-icon material-symbols-outlined">celebration</span>
+	<span class="celebration-icon material-symbols-outlined">celebration</span>
+	<span class="celebration-icon material-symbols-outlined">celebration</span>
+{% endblock %}
