@@ -33,6 +33,27 @@ header {
 	width: 100%;
 }
 
+button {
+	border: 1px solid lightgray !important;
+}
+
+button:focus {
+	background-color: #d0d0d0;
+}
+
+button:hover {
+	background-color: #e0e0e0;
+}
+
+button, input, textarea {
+	background-color: #f0f0f0;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	outline: none;
+	padding: 0.75rem;
+}
+
 main {
 	box-sizing: border-box;
 	padding: 0 2rem;

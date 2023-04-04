@@ -1,0 +1,21 @@
+#email-input {
+	width: 15rem;
+}
+
+.contact-form {
+	border-left: 1px solid #e0e0e0;
+	margin-top: 2rem;
+	padding-left: 1.5rem;
+}
+
+.contact-form input, label, textarea {
+	display: block;
+}
+
+.contact-form > input, .contact-form > textarea {
+	margin-bottom: 1rem;
+}
+
+.contact-form > label {
+	margin-bottom: 0.5rem;
+}
