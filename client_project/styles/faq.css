@@ -1,0 +1,52 @@
+.accordion-body {
+	border: 1px solid #c7f9cc;
+	border-top: none;
+	margin: 0;
+	padding: 1rem;
+}
+
+.accordion-row > input[type="radio"],
+.accordion-row > input[type="radio"]:not(:checked) ~ .accordion-body {
+	display: none;
+}
+
+.accordion-row > input[type="radio"]:checked ~ label > .accordion-unselected-icon {
+	display: none;
+}
+
+.accordion-row > input[type="radio"]:not(:checked) ~ label > .accordion-selected-icon {
+	display: none;
+}
+
+.accordion-row > label {
+	background-color: #c7f9cc;
+	border-top: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem;
+}
+
+.accordion-row > label:hover {
+	cursor: pointer;
+}
+
+.accordion-row:first-of-type > label {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+/* .accordion-row:last-of-type > input[type="radio"]:checked ~ label,
+.accordion-row:not(:last-of-type) > label {
+	border-bottom: none;
+} */
+
+.accordion-row:last-of-type > input[type="radio"]:not(:checked) ~ label,
+.accordion-row:last-of-type .accordion-body {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.accordion-row:not(:last-of-type) .accordion-body {
+	border-bottom: none;
+}
