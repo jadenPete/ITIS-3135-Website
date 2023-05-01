@@ -12,6 +12,7 @@
 	--background-color: #edede9;
 	--primary-color: #ffbe0b;
 	--primary-link-color: gray;
+	--secondary-color: #c7f9cc;
 	--secondary-link-color: #505050;
 }
 
@@ -52,6 +53,21 @@ button, input, textarea {
 	font-size: 1rem;
 	outline: none;
 	padding: 0.75rem;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 2rem 0;
+}
+
+footer > hr {
+	background-color: lightgray;
+	border: none;
+	height: 1px;
+	margin: 2rem;
+	width: 75%;
 }
 
 main {

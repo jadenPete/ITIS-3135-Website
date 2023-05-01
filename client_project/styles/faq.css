@@ -1,5 +1,5 @@
 .accordion-body {
-	border: 1px solid #c7f9cc;
+	border: 1px solid var(--secondary-color);
 	border-top: none;
 	margin: 0;
 	padding: 1rem;
@@ -19,7 +19,7 @@
 }
 
 .accordion-row > label {
-	background-color: #c7f9cc;
+	background-color: var(--secondary-color);
 	border-top: 1px solid white;
 	display: flex;
 	align-items: center;

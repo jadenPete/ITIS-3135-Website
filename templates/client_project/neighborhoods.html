@@ -2,5 +2,12 @@
 
 {% extends "client_project/base.html" %}
 
+{% block head %}
+	<link rel="stylesheet" href="styles/neighborhoods.css">
+{% endblock %}
+
 {% block content %}
+	<p>Below is a map of Singapore's transit system, which should be helpful for our volunteers in finding stray cats to catalog and report.</p>
+
+	<img class="map" src="images/singapore_map.jpg">
 {% endblock %}
